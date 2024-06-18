@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="desafio27.css" />
+    <title>PLAYSTATION</title>
+    <script src="desafio27.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  </head>
+
+  <body>
+    <div class="divprincipal">
+      <header class="faixaprincipal">
+        <img src="icones/icons8-playstation-375.png" class="play" />
+        <h1>PLAYSTATION - PLAY HAS NO LIMITS</h1>
+      </header>
+    </div>
+
+    <br />
+
+    <div class="divtitulologin">
+      <h1>TELA DE CADASTRO</h1>
+    </div>
+    <br />
+
+    <div class="div-formulario">
+      <form style="outline: none" id="formulario">
+        <div class="container-formulario">
+          <label class="label-formulario">NOME:</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="nome"
+            name="nome"
+            required
+          />
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">SOBRENOME:</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="sobrenome"
+            name="sobrenome"
+            required
+          />
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">E-MAIL:</label>
+          <input
+            onblur="validacaoEmail()"
+            type="text"
+            class="caixatexto"
+            id="email"
+            name="email"
+            required
+          />
+          <span id="erro-email" class="error-message"></span>
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">CEP:</label>
+          <input type="text" class="caixatexto" id="cep" name="cep" required />
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">RUA:</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="rua"
+            name="rua"
+            required
+            readonly
+          />
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">BAIRRO:</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="bairro"
+            name="bairro"
+            required
+            readonly
+          />
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">CIDADE:</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="localidade"
+            name="localidade"
+            required
+            readonly
+          />
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">ESTADO:</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="uf"
+            name="uf"
+            required
+            readonly
+          />
+        </div>
+        <div class="container-formulario">
+          <button type="submit" class="formulario">CADASTRAR</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="divfooter">
+      <footer>
+        © [2024] Todos os direitos reservados. PlayStation é uma marca
+        registrada da Sony Corporation. Este site não é afiliado, endossado ou
+        patrocinado pela Sony Corporation. Todos os logotipos e marcas
+        registradas pertencem aos seus respectivos proprietários. Desenvolvido
+        por Pedro Yokada – Turma L - Kick.
+      </footer>
+    </div>
+  </body>
+</html>
